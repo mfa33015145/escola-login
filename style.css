@@ -1,0 +1,125 @@
+body {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("galaxia2.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  background-color: rgba(33, 33, 33, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 1), 1px 1px 10px rgba(255, 255, 255, 0.6);
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#login-form input {
+  width: 245px;
+  min-height: 45px;
+  color: #fff;
+  outline: none;
+  transition: 0.35s;
+  padding: 0px 7px;
+  background-color: #212121;
+  border-radius: 6px;
+  border: 2px solid #212121;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 1), 1px 1px 10px rgba(255, 255, 255, 0.6);
+}
+
+#login-form input::placeholder {
+  color: #999;
+}
+
+#login-form input:focus::placeholder {
+  transition: 0.3s;
+  opacity: 0;
+}
+
+#login-form input:focus {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 1), 1px 1px 10px rgba(255, 255, 255, 0.6), inset 2px 2px 10px rgba(0, 0, 0, 1), inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+}
+
+#login-form button {
+  padding: 10px 35px;
+  cursor: pointer;
+  background-color: #212121;
+  border-radius: 6px;
+  border: 2px solid #212121;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 1), 1px 1px 10px rgba(255, 255, 255, 0.6);
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.35s;
+}
+
+#login-form button:hover,
+#login-form button:focus {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 1), 1px 1px 10px rgba(255, 255, 255, 0.6), inset 2px 2px 10px rgba(0, 0, 0, 1), inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+}
+
+.cadastro-link {
+  margin-top: 15px;
+  text-align: center; /* Centraliza o link "Cadastre-se" */
+}
+
+.cadastro-link a {
+  color: #fff;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+#notas-container {
+  display: none; /* Inicia oculto até o login ser efetuado */
+  background-color: rgba(33, 33, 33, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 1), 1px 1px 10px rgba(255, 255, 255, 0.6);
+}
+
+#notas-container h2 {
+  color: white;
+}
+
+#notas-container ul {
+  color: white;
+}
+
+#logout-button {
+  margin-top: 15px; /* Espaço entre o conteúdo anterior e o botão Logout */
+  padding: 10px 35px;
+  cursor: pointer;
+  background-color: #212121;
+  border-radius: 6px;
+  border: 2px solid #212121;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 1), 1px 1px 10px rgba(255, 255, 255, 0.6);
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.35s;
+}
+
+#logout-button:hover,
+#logout-button:focus {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 1), 1px 1px 10px rgba(255, 255, 255, 0.6), inset 2px 2px 10px rgba(0, 0, 0, 1), inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+}

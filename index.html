@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="login" name="login" placeholder="Login" required>
+            <input type="password" id="senha" name="senha" placeholder="Senha" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="mensagem"></p>
+        <div class="cadastro-link">
+            <a href="cadastro.html">Cadastre-se</a>
+        </div>
+        <div id="notas-container" style="display:none;">
+            <h2>Notas</h2>
+            <ul id="notas-list">
+                <!-- Notas serão adicionadas dinamicamente via JavaScript -->
+            </ul>
+            <button id="logout-button">Logout</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
